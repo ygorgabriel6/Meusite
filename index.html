@@ -20,26 +20,34 @@
     <div class="container--mxwhidth">
       <main>
         <section class="hero" id="inicio">
-          <h1>Ola, me chamo Ygor 👋</h1>
+          <h1 class="title-icon">
+            <img
+              src="/img/mao-acenando.png"
+              alt="Mão acenando"
+              class="img-icon"
+            />
+            Olá, me chamo Ygor
+          </h1>
           <p>
-            Está pagina é dedicada a demonstrar meus projeto e jutamente a isto,
-            acompanhar cada evolução
+            Esta página é dedicada a demonstrar meus projetos e acompanhar cada
+            evolução
           </p>
         </section>
+
         <section class="project-section" id="projetos">
           <h1>Projetos</h1>
           <div class="project-box">
-            <div class="card">
+            <div class="card box">
               <h2>Projeto</h2>
               <p>Descrição do projeto</p>
               <a href="/" class="btn-primary">Ver mais</a>
             </div>
-            <div class="card">
+            <div class="card box">
               <h2>Projeto</h2>
               <p>Descrição do projeto</p>
               <a href="/" class="btn-primary">Ver mais</a>
             </div>
-            <div class="card">
+            <div class="card box">
               <h2>Projeto</h2>
               <p>Descrição do projeto</p>
               <a href="/" class="btn-primary">Ver mais</a>
@@ -47,35 +55,35 @@
           </div>
         </section>
 
-        <section class="section-skill">
+        <section class="box">
           <div class="skill-container">
             <h2>Skills</h2>
             <div class="skill-grid">
-              <div class="skill-card">
-                <h3>HTML</h3>
+              <div class="skill-card box">
+                <h3 class="title">HTML</h3>
                 <span class="progress"></span>
               </div>
-              <div class="skill-card">
-                <h3>CSS</h3>
+              <div class="skill-card box">
+                <h3 class="title">CSS</h3>
                 <span class="progress"></span>
               </div>
-              <div class="skill-card">
-                <h3>JAVASCRIPT</h3>
+              <div class="skill-card box">
+                <h3 class="title">JAVASCRIPT</h3>
                 <span class="progress"></span>
               </div>
             </div>
           </div>
         </section>
-        <section class="section-certificate" id="certificado">
+        <section class="box section-certificate" id="certificado">
           <h2>Certificados</h2>
           <div class="certificate-container">
-            <div class="certificate-card">
+            <div class="certificate-card box">
               <img
                 class="certificate-img"
                 src="/certificate/thumb certificado.png"
                 alt=" Certificado origamid"
               />
-              <h3>Origamid</h3>
+              <h3 class="title">Origamid</h3>
               <p>2022-2023 (43h)</p>
               <a
                 class="btn-primary"
@@ -85,13 +93,13 @@
                 >Ver certificado</a
               >
             </div>
-            <div class="certificate-card">
+            <div class="certificate-card box">
               <img
                 class="certificate-img"
                 src="/certificate/thumb php.png"
                 alt=" Certificado PHP"
               />
-              <h3>PHP</h3>
+              <h3 class="title">PHP</h3>
               <p>2022 (3H)</p>
               <a
                 class="btn-primary"
@@ -101,13 +109,13 @@
                 >Ver certificado</a
               >
             </div>
-            <div class="certificate-card">
+            <div class="certificate-card box">
               <img
                 class="certificate-img"
                 src="/certificate/thumb fatec.png"
                 alt=" Certificado fatec"
               />
-              <h3>Fatec Tatuí</h3>
+              <h3 class="title">Fatec Tatuí</h3>
               <p>2021-2024</p>
               <a
                 class="btn-primary"
@@ -119,11 +127,11 @@
             </div>
           </div>
         </section>
-        <section class="section-contact" id="contato">
+        <section class="box section-contact" id="contato">
           <div class="contact-container">
             <div>
               <h2>Contato</h2>
-              <div class="contact-box">
+              <div class="contact-box box">
                 <a class="btn-primary" href="mailto:ygorgabriel99696@gmail.com"
                   >Email:ygorgabriel99696@gmail.com</a
                 >
@@ -142,18 +150,18 @@
             <section class="section-form">
               <h2>Entre em contato</h2>
               <form
-                class="form-box"
+                class="form-box box"
                 action="mailto:seuemail@gmail.com"
                 method="POST"
                 enctype="text/plain"
               >
-                <label>Nome:</label>
+                <label for="nome">Nome:</label>
                 <input type="text" name="nome" required />
 
-                <label>Email:</label>
+                <label for="email">Email:</label>
                 <input type="email" name="email" required />
 
-                <label>Mensagem:</label>
+                <label for="mensagem">Mensagem:</label>
                 <textarea name="mensagem" required></textarea>
 
                 <button type="submit" class="btn-primary">Enviar</button>
