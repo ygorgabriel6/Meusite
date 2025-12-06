@@ -1,6 +1,12 @@
 * {
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
+#certificado, #sobre, #projetos, #inicio, #contato {
+  scroll-margin-top: 6.25rem;
+}
 body {
   margin: 0;
   padding: 0;
@@ -168,7 +174,8 @@ h3 {
 .contact-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .section-contact {
@@ -177,6 +184,7 @@ h3 {
   border: 1px solid #7e9586;
   padding: 1rem;
   justify-content: start;
+  margin: 2.5rem auto;
 }
 .section-contact h2 {
   text-align: center;
@@ -189,4 +197,27 @@ h3 {
   border-radius: 15px;
   width: fit-content;
   padding: 2rem;
+  gap: 2rem;
+  place-items: center;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+footer {
+  background-color: #ffffff;
+  border-top: 2px solid #e7e7e7;
+  text-align: center;
+  padding: 1.5rem 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+footer h6 {
+  margin: 0;
+  color: #6f6f6f;
+  font-size: 0.9rem;
 }

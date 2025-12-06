@@ -11,24 +11,24 @@
       <div class="logo">logotipo</div>
 
       <nav class="nav-link">
-        <a href="/" class="btn-primary">Inicio</a>
-        <a href="/" class="btn-primary">Projetos</a>
-        <a href="/" class="btn-primary">Sobre mim</a>
-        <a href="/" class="btn-primary">Contato</a>
+        <a href="#inicio" class="btn-primary">Inicio</a>
+        <a href="#projetos"  class="btn-primary">Projetos</a>
+        <a href="#certificado" class="btn-primary">Certificados</a>
+        <a href="#contato" class="btn-primary" >Contato</a>
       </nav>
     </header>
     <div class="container--mxwhidth">
       <main>
-        <section class="hero">
+        <section class="hero" id="inicio">
           <h1>Ola, me chamo Ygor 👋</h1>
           <p>
             Está pagina é dedicada a demonstrar meus projeto e jutamente a isto,
             acompanhar cada evolução
           </p>
         </section>
-        <section class="project-section">
+        <section class="project-section" id="projetos">
           <h1>Projetos</h1>
-          <div class="project-box">
+          <div class="project-box" >
             <div class="card">
               <h2>Projeto</h2>
               <p>Descrição do projeto</p>
@@ -66,7 +66,7 @@
             </div>
           </div>
         </section>
-        <section class="section-certificate">
+        <section class="section-certificate" id="certificado">
           <h2>Certificados</h2>
           <div class="certificate-container">
             <div class="certificate-card">
@@ -119,28 +119,51 @@
             </div>
           </div>
         </section>
+        <section class="section-contact" id="contato">
+          <div class="contact-container">
+            <div>
+              <h2>Contato</h2>
+              <div class="contact-box">
+                <a class="btn-primary" href="mailto:ygorgabriel99696@gmail.com"
+                  >Email:ygorgabriel99696@gmail.com</a
+                >
+                <a class="btn-primary" href="tel:+5515998432578"
+                  >(15)99843-2578</a
+                >
+                <a
+                  class="btn-primary"
+                  href="https://www.linkedin.com/in/ygor-pavanelli"
+                  target="_blank"
+                  rel="noopener"
+                  >LinkedIn</a
+                >
+              </div>
+            </div>
+            <section class="section-form">
+              <h2>Entre em contato</h2>
+              <form
+                class="form-box"
+                action="mailto:seuemail@gmail.com"
+                method="POST"
+                enctype="text/plain"
+              >
+                <label>Nome:</label>
+                <input type="text" name="nome" required />
+
+                <label>Email:</label>
+                <input type="email" name="email" required />
+
+                <label>Mensagem:</label>
+                <textarea name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+              </form>
+            </section>
+          </div>
+        </section>
       </main>
     </div>
 
-    <section class="section-contact">
-      <div class="contact-container">
-        <div>
-          <h2>Contato</h2>
-          <div class="contact-box">
-            <p>Email:ygorgabriel99696@gmail.com</p>
-            <p>WhatsApp:(15)99843-2578</p>
-            <p>Linkedeen</p>
-          </div>
-        </div>
-        <section>
-          <h2>entre em contato</h2>
-          <div>
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" />
-          </div>
-        </section>
-      </div>
-    </section>
     <footer><h6>Ygor Pavanelli, todos os direitos reservados</h6></footer>
   </body>
 </html>
